@@ -174,7 +174,7 @@ function get_remote_crowsnest_commit() {
 
   local commit
   cd "${CROWSNEST_DIR}" && git fetch origin -q
-  commit=$(git describe origin/master --always --tags | cut -d "-" -f 1,2)
+  commit=$(git describe origin/$(git branch --show-current) --always --tags | cut -d "-" -f 1,2)
   echo "${commit}"
 }
 

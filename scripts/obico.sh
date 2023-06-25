@@ -429,7 +429,7 @@ function get_remote_moonraker_obico_commit() {
 
   local commit
   cd "${MOONRAKER_OBICO_DIR}" && git fetch origin -q
-  commit=$(git describe origin/master --always --tags | cut -d "-" -f 1,2)
+  commit=$(git describe origin/$(git branch --show-current) --always --tags | cut -d "-" -f 1,2)
   echo "${commit}"
 }
 

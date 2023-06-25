@@ -481,7 +481,7 @@ function get_remote_telegram_bot_commit() {
 
   local commit
   cd "${TELEGRAM_BOT_DIR}" && git fetch origin -q
-  commit=$(git describe origin/master --always --tags | cut -d "-" -f 1,2)
+  commit=$(git describe origin/$(git branch --show-current) --always --tags | cut -d "-" -f 1,2)
   echo "${commit}"
 }
 

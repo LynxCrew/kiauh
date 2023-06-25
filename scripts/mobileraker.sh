@@ -184,7 +184,7 @@ function get_remote_mobileraker_commit() {
 
   local commit
   cd "${MOBILERAKER_DIR}" && git fetch origin -q
-  commit=$(git describe origin/main --always --tags | cut -d "-" -f 1,2)
+  commit=$(git describe origin/$(git branch --show-current) --always --tags | cut -d "-" -f 1,2)
   echo "${commit}"
 }
 

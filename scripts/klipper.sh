@@ -587,7 +587,7 @@ function get_remote_klipper_commit() {
   [[ -z ${branch} ]] && branch="master"
 
   cd "${KLIPPER_DIR}" && git fetch origin -q
-  commit=$(git describe "origin/${branch}" --always --tags | cut -d "-" -f 1,2)
+  commit=$(git describe "origin/$(git branch --show-current)" --always --tags | cut -d "-" -f 1,2)
   echo "${commit}"
 }
 
