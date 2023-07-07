@@ -341,7 +341,7 @@ function get_remote_mainsail_version() {
   [[ ! $(dpkg-query -f'${Status}' --show curl 2>/dev/null) = *\ installed ]] && return
 
   local tags
-  tags=$(curl -s "https://api.github.com/repos/Zeanon/mainsail/tags" | grep "name" | cut -d'"' -f4)
+  tags=$(curl -s "https://api.github.com/repos/LynxCrew/mainsail/tags" | grep "name" | cut -d'"' -f4)
   echo "${tags}" | head -1
 }
 
@@ -536,16 +536,16 @@ function get_mainsail_download_url() {
   local releases_by_tag tags tag unstable_url url
 
   ### latest stable download url
-  url="https://github.com/Zeanon/mainsail/releases/latest/download/mainsail.zip"
+  url="https://github.com/LynxCrew/mainsail/releases/latest/download/mainsail.zip"
 
   read_kiauh_ini "${FUNCNAME[0]}"
   if [[ ${mainsail_install_unstable} == "true" ]]; then
-    releases_by_tag="https://api.github.com/repos/Zeanon/mainsail/tags"
+    releases_by_tag="https://api.github.com/repos/LynxCrew/mainsail/tags"
     tags=$(curl -s "${releases_by_tag}" | grep "name" | cut -d'"' -f4)
     tag=$(echo "${tags}" | head -1)
 
     ### latest unstable download url including pre-releases (alpha, beta, rc)
-    unstable_url="https://github.com/Zeanon/mainsail/releases/download/${tag}/mainsail.zip"
+    unstable_url="https://github.com/LynxCrew/mainsail/releases/download/${tag}/mainsail.zip"
 
     if [[ ${unstable_url} == *"download//"* ]]; then
       warn_msg "Download URL broken! Falling back to URL of latest stable release!"
@@ -564,7 +564,7 @@ function mainsail_port_check() {
       status_msg "Detected other enabled interfaces:"
 
       [[ ${FLUIDD_ENABLED} == "true" ]] && \
-      echo -e "   ${cyan}â— Fluidd - Port: ${FLUIDD_PORT}${white}"
+      echo -e "   ${cyan}Ã¢â€”Â Fluidd - Port: ${FLUIDD_PORT}${white}"
 
       if [[ ${FLUIDD_PORT} == "80" ]]; then
         PORT_80_BLOCKED="true"
@@ -589,7 +589,7 @@ function select_mainsail_port() {
     echo -e "| ${red}You need to choose a different port for Mainsail!${white}     |"
     echo -e "| ${red}The following web interface is listening at port 80:${white}  |"
     blank_line
-    [[ ${FLUIDD_PORT} == "80" ]] && echo "|  â— Fluidd                                             |"
+    [[ ${FLUIDD_PORT} == "80" ]] && echo "|  Ã¢â€”Â Fluidd                                             |"
     blank_line
     echo -e "| Make sure you don't choose a port which was already   |"
     echo -e "| assigned to another webinterface!                     |"
@@ -642,7 +642,7 @@ function patch_mainsail_update_manager() {
 [update_manager mainsail]
 type: web
 channel: stable
-repo: Zeanon/mainsail
+repo: LynxCrew/mainsail
 path: ~/mainsail
 MOONRAKER_CONF
 
