@@ -112,7 +112,7 @@ function install_mainsail_macros() {
 function download_mainsail_macros() {
   local ms_cfg_repo path configs regex line gcode_dir
 
-  ms_cfg_repo="https://github.com/Zeanon/mainsail-config.git"
+  ms_cfg_repo="https://github.com/mainsail-crew/mainsail-config.git"
   regex="${HOME//\//\\/}\/([A-Za-z0-9_]+)\/config\/printer\.cfg"
   configs=$(find "${HOME}" -maxdepth 3 -regextype posix-extended -regex "${regex}" | sort)
 
