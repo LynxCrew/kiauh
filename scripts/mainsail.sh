@@ -87,7 +87,7 @@ function install_mainsail_macros() {
     echo -e "| have Mainsail fully functional and working.           |"
     blank_line
     echo -e "| The recommended macros for Mainsail can be seen here: |"
-    echo -e "| https://github.com/Zeanon/mainsail-config      |"
+    echo -e "| https://github.com/LynxCrew/mainsail-config      |"
     blank_line
     echo -e "| If you already use these macros skip this step.       |"
     echo -e "| Otherwise you should consider to answer with 'yes' to |"
