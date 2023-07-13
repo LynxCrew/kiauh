@@ -112,7 +112,7 @@ function install_fluidd_macros() {
 function download_fluidd_macros() {
   local ms_cfg_repo path configs regex line gcode_dir
 
-  ms_cfg_repo="https://github.com/fluidd-core/fluidd-config.git"
+  ms_cfg_repo="https://github.com/LynxCrew/fluidd-config.git"
   regex="${HOME//\//\\/}\/([A-Za-z0-9_]+)\/config\/printer\.cfg"
   configs=$(find "${HOME}" -maxdepth 3 -regextype posix-extended -regex "${regex}" | sort)
 
@@ -495,7 +495,7 @@ function patch_fluidd_config_update_manager() {
 type: git_repo
 primary_branch: master
 path: ~/fluidd-config
-origin: https://github.com/fluidd-core/fluidd-config.git
+origin: https://github.com/LynxCrew/fluidd-config.git
 managed_services: klipper
 MOONRAKER_CONF
 
