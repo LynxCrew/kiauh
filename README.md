@@ -1,6 +1,6 @@
 <p align="center">
   <a>
-    <img src="https://raw.githubusercontent.com/th33xitus/kiauh/master/resources/screenshots/kiauh.png" alt="KIAUH logo" height="181">
+    <img src="https://raw.githubusercontent.com/LynxCrew/kiauh/master/resources/screenshots/kiauh.png" alt="KIAUH logo" height="181">
     <h1 align="center">Klipper Installation And Update Helper</h1>
   </a>
 </p>
@@ -10,14 +10,14 @@
 </p>
 
 <p align="center">
-  <a><img src="https://img.shields.io/github/license/th33xitus/kiauh"></a>
-  <a><img src="https://img.shields.io/github/stars/th33xitus/kiauh"></a>
-  <a><img src="https://img.shields.io/github/forks/th33xitus/kiauh"></a>
-  <a><img src="https://img.shields.io/github/languages/top/th33xitus/kiauh?logo=gnubash&logoColor=white"></a>
-  <a><img src="https://img.shields.io/github/v/tag/th33xitus/kiauh"></a>
+  <a><img src="https://img.shields.io/github/license/LynxCrew/kiauh"></a>
+  <a><img src="https://img.shields.io/github/stars/LynxCrew/kiauh"></a>
+  <a><img src="https://img.shields.io/github/forks/LynxCrew/kiauh"></a>
+  <a><img src="https://img.shields.io/github/languages/top/LynxCrew/kiauh?logo=gnubash&logoColor=white"></a>
+  <a><img src="https://img.shields.io/github/v/tag/LynxCrew/kiauh"></a>
   <br />
-  <a><img src="https://img.shields.io/github/last-commit/th33xitus/kiauh"></a>
-  <a><img src="https://img.shields.io/github/contributors/th33xitus/kiauh"></a>
+  <a><img src="https://img.shields.io/github/last-commit/LynxCrew/kiauh"></a>
+  <a><img src="https://img.shields.io/github/contributors/LynxCrew/kiauh"></a>
 </p>
 
 <hr>
@@ -36,12 +36,12 @@ is the simplest way to flash an image like this to an SD card.
 * Once you have downloaded, installed and launched the Raspberry Pi Imager, 
 select `Choose OS -> Raspberry Pi OS (other)`: \
 <p align="center">
-  <img src="https://raw.githubusercontent.com/th33xitus/kiauh/master/resources/screenshots/rpi_imager1.png" alt="KIAUH logo" height="350">
+  <img src="https://raw.githubusercontent.com/LynxCrew/kiauh/master/resources/screenshots/rpi_imager1.png" alt="KIAUH logo" height="350">
 </p>
 
 * Then select `Raspberry Pi OS Lite (32bit)`:
 <p align="center">
-  <img src="https://raw.githubusercontent.com/th33xitus/kiauh/master/resources/screenshots/rpi_imager2.png" alt="KIAUH logo" height="350">
+  <img src="https://raw.githubusercontent.com/LynxCrew/kiauh/master/resources/screenshots/rpi_imager2.png" alt="KIAUH logo" height="350">
 </p>
 
 * Back in the Raspberry Pi Imager's main menu, select the corresponding SD card to which 
@@ -177,7 +177,7 @@ prompt and confirm by hitting ENTER.
 <h2 align="center">✨ Credits ✨</h2>
 
 * A big thank you to [lixxbox](https://github.com/lixxbox) for that awesome KIAUH-Logo!
-* Also, a big thank you to everyone who supported my work with a [Ko-fi](https://ko-fi.com/th33xitus) !
+* Also, a big thank you to everyone who supported my work with a [Ko-fi](https://ko-fi.com/dw__0) !
 * Last but not least: Thank you to all contributors and members of the Klipper Community who like and share this project!
 
 <hr>
