@@ -426,7 +426,7 @@ function update_telegram_bot() {
   if [[ ! -d ${TELEGRAM_BOT_DIR} ]]; then
     clone_telegram_bot "${TELEGRAM_BOT_REPO}"
   else
-    backup_before_update "moonraker-telegram-bot"
+    backup_before_update "telegram-bot"
     status_msg "Updating Moonraker ..."
     cd "${TELEGRAM_BOT_DIR}" && git pull
     ### read PKGLIST and install possible new dependencies
